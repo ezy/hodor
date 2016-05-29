@@ -20,9 +20,9 @@ function tweetHodor() {
         if (!error) {
             // set the username and the id of the tweet we're responding to
             var userName = data.statuses[0].user.screen_name,
-								status = data.statuses[0].id_str;
+								statusReply = data.statuses[0].id_str;
             // ... then we respond to the tweet with Hodor!
-						T.post('statuses/update', { in_reply_to_status_id: status, status: '@' + userName + ' Hodor!' }, function(err, data, response) {
+						T.post('statuses/update', { in_reply_to_status_id: statusReply, status: '@' + userName + ' Hodor!' }, function(err, data, response) {
                 if (response) {
                     console.log('Success! Check your bot, it should have retweeted something.');
                 }
