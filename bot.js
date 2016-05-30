@@ -43,4 +43,4 @@ function tweetHodor() {
 tweetHodor();
 // ...and then every 60 mins after that. Time here is in milliseconds, so
 // 1000 ms = 1 second, 1 sec * 60 = 1 min, 1 min * 60 = 60 minutes --> 1000 * 60 * 60
-setInterval(tweetHodor, 1000 * 60 * 15);
+setInterval(tweetHodor, 1000 * 60 * 6);
